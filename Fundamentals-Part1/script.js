@@ -72,16 +72,16 @@ console.log(lastName);
 ////////////////////////////////////
 // Basic Operators
 // Math operators
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJonas, ageSarah);
+const now = 2024;
+const ageShriya = now - 2004;
+const ageShrey = now - 2006;
+console.log(ageShriya, ageShrey);
 
-console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+console.log(ageShriya * 2, ageShriya / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Jonas';
-const lastName = 'Schmedtmann';
+const firstName = 'Shriya';
+const lastName = 'Seth';
 console.log(firstName + ' ' + lastName);
 
 // Assignment operators
@@ -94,18 +94,18 @@ x--;
 console.log(x);
 
 // Comparison operators
-console.log(ageJonas > ageSarah); // >, <, >=, <=
-console.log(ageSarah >= 18);
+console.log(ageShriya > ageShrey); // >, <, >=, <=
+console.log(ageShrey >= 18);
 
-const isFullAge = ageSarah >= 18;
+const isFullAge = ageShrey >= 18;
 
 console.log(now - 1991 > now - 2018);
 
 ////////////////////////////////////
 // Operator Precedence
 const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
+const ageShriya = now - 1991;
+const ageShrey = now - 2018;
 
 console.log(now - 1991 > now - 2018);
 
@@ -113,8 +113,8 @@ let x, y;
 x = y = 25 - 10 - 5; // x = y = 10, x = 10
 console.log(x, y);
 
-const averageAge = (ageJonas + ageSarah) / 2;
-console.log(ageJonas, ageSarah, averageAge);
+const averageAge = (ageShriya + ageShrey) / 2;
+console.log(ageShriya, ageShrey, averageAge);
 */
 
 ////////////////////////////////////
@@ -152,16 +152,16 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 
 ////////////////////////////////////
 // Strings and Template Literals
-const firstName = 'Jonas';
+const firstName = 'Shriya';
 const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+const birthYear = 2004;
+const year = 2024;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
-console.log(jonas);
+const Shriya = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(Shriya);
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew);
+const ShriyaNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(ShriyaNew);
 
 console.log(`Just a regular string...`);
 
@@ -246,7 +246,8 @@ console.log(String(23), 23);
 
 // type coercion
 console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
+console.log('23' - '10' - 3);  //converts all to number , ans is 20-10-3 = 10
+console.log('23' + '10' + 3);  // converts all to string , ans is 23103 
 console.log('23' / '2');
 
 let n = '1' + 1; // '11'
@@ -424,8 +425,8 @@ if (23 > 10) {
   const str = '23 is bigger';
 }
 
-const me = 'Jonas';
-console.log(`I'm ${2037 - 1991} years old ${me}`);
+const me = 'Shriya';
+console.log(`I'm ${2024 - 2004} years old ${me}`);
 
 ////////////////////////////////////
 // The Conditional (Ternary) Operator
